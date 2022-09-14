@@ -96,18 +96,23 @@
     <!-- main start -->
     <main class="container my-5 py-5">
         <section class="courses">
-            <div class="card-heading py-5 mb-3">
-                <div class="card text-center justify-content-center">
-                    <div class="card-body">
-                        <h1>Discover Our Popular Courses</h1>
-                        <p>It is a long established fact that a reader will be distracted by the readable content of a
-                            page
-                            when
-                            looking at its layout.</p>
-                    </div>
+            <!-- course heading -->
+            <div class="row">
+                <div class="col-4">
+
+                </div>
+                <div class="col-4 text-center px-1 mb-5">
+                    <h1>Discover Our Popular Courses</h1>
+                    <p>It is a long established fact that a reader will be distracted by the readable content of a
+                        page
+                        when
+                        looking at its layout.</p>
+                </div>
+                <div class="col-4">
+
                 </div>
             </div>
-
+            <!-- courses -->
             <div class="row">
                 <div class="col-md-6 col-sm-12">
                     <div class="card mb-3" style="max-width: 640px;">
@@ -226,7 +231,7 @@
             </div>
 
         </section>
-
+        <!-- JOin section -->
         <div class="row my-5 p-5 bg-primary text-center justify-content-center align-items-center">
             <div class="col-6 px-5">
                 <div>
@@ -267,6 +272,117 @@
                 </div>
             </div>
         </div>
+        <!-- Frequently Asked Qustion -->
+        <section>
+            <div class="row">
+                <div class="col-md-3 col-sm-1 col-1">
+
+                </div>
+                <div class="col-md-6 col-sm-10 col-10 text-center px-5">
+                    <div>
+                        <h1>Frequently Asked Questions</h1>
+                        <p>It is a long established fact that a reader will be distracted by the readable content of a
+                            page when looking
+                            at its layout.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-1 col-1">
+
+                </div>
+            </div>
+            <!-- frequently asked Question -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            What is the difference between Grid and Flexbox?
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">Grid:-CSS Grid Layout, is a two-dimensional grid-based layout system
+                            with rows and columns, making it easier to design web pages without having to use floats and
+                            positioning. Like tables, grid layout allow us to align elements into columns and rows.
+
+                            To get started you have to define a container element as a grid with display: grid, set the
+                            column and row sizes with grid-template-columns and grid-template-rows, and then place its
+                            child elements into the grid with grid-column and grid-row.
+
+                            Flexbox: The CSS Flexbox offers a one-dimensional layout. It is helpful in allocating and
+                            aligning the space among items in a container (made of grids). It works with all kinds of
+                            display devices and screen sizes.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Which one is better Bootstrap or Tailwind?
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            We know that Bootstrap is based on object-oriented CSS. Bootstrap is actually a UI kit CSS
+                            framework and on the other hand Tailwind is a utility first CSS framework. So, the
+                            difference is UI (User Interface). That means bootstrap gives you complete user interface
+                            itself. In bootstrap we can see that there have some functions to makes the text visible and
+                            invisible.
+                            That means what Tailwind is really doing is that it’s trying to restrict the scope of CSS.
+                            It’s trying to restrict what you can do with CSS. In Tailwind there have some very good
+                            defaults available out of the box. For example, if we look at padding in Tailwind, we can
+                            see that it gives us a lot of default classes available also we can see some certain values
+                            for classes. That will help to make a style bit consistent.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What is CSS BOX model?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            CSS box model is a container which contains multiple properties including borders, margin,
+                            padding and the content itself. It is used to create the design and layout of web pages. It
+                            can be used as a toolkit for customizing the layout of different elements. The web browser
+                            renders every element as a rectangular box according to the CSS box model.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            What are Semantic Elements?
+                        </button>
+                    </h2>
+                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            Semantic HTML or semantic markup is HTML that introduces meaning to the web page rather than
+                            just presentation. For example, a <p> tag indicates that the enclosed text is a paragraph.
+                                This is both semantic and presentational, because people know what paragraphs are and
+                                browsers know how to display them. In HTML4, tags like <b> and <i> are not semantic,
+                                        because they define only how the text should look (bold or italic) and do not
+                                        provide any additional meaning.
+
+                                        The benefit of writing semantic HTML stems from the goal of a web page—to
+                                        communicate. By adding semantic tags to your document, you provide additional
+                                        information about the document, which aids in communication.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </main>
 
     <!-- bootstrap js link -->
